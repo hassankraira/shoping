@@ -1,0 +1,96 @@
+.selected{
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 100%;
+}
+.ui.itms > .item{
+    display: flex;
+    box-shadow: none;
+    transition: box-shadow 0.1s ease;
+    
+}
+.border{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 9px;
+    width: 100%;
+    text-align: center;
+}
+.www{
+    position: inherit;
+    border-radius: 5px;
+       
+}
+.description{
+    margin-left: 15%;
+
+}
+.hed{
+
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.price{
+    font-size: 15px;
+    margin-bottom: -30px;
+    margin-left: 86%;
+    margin-top: 2%;
+    color :black
+}
+.img{
+    max-width: 10%;
+    margin-top: 0%;
+    margin-right: 100%;
+}
+
+  .aa{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    margin-left: 5%;
+    margin-top: 12%;
+}
+a{
+    text-decoration: none;
+}
+.bb{
+    background-color: white;
+    color: black;
+}
+.input{
+    margin-left: 75%;
+    margin-top: -10%;
+    width: 20%;
+
+}
+.ii{
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    
+}
+.grid-cont{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+.bord{
+    margin-top: 25%;
+    border-radius: 9px;
+    width: 225px;
+    border: solid black 1px;
+    text-align: center;
+    position: sticky;
+    top: 10rem;
+    height: 225px;
+    margin-left: 30%;
+}

@@ -1,0 +1,17 @@
+<a href=""></a>
+<div *ngIf="bool">
+<div  *ngFor="let product of  allRequest"  class="ui itms ngNonBindableDemo border " >
+    <div (click)="clicked(product)"
+    [class.selected]="isSelected(product)" style="height: 100%;" id="title" name="title" class="www ">
+    <div #price class="price">price : {{product.Price}} $$</div>
+    <img [src]="product.Image" class="img">
+        <div class="header hed">{{product.Name}}</div>
+        <div class="meta">
+                <div > product Number : {{product.Number}}</div>
+                <div class="">quntaty:{{product.Quntaty}}</div>
+            </div>
+          
+        </div>
+    </div>
+<br><br>
+</div>

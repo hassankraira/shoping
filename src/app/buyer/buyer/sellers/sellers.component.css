@@ -1,0 +1,45 @@
+.selected{
+    border:2px solid rgb(0, 247, 255);
+    border-radius: 10px;
+    width: 100%;
+}
+.ui.itms > .item{
+    display: flex;
+    box-shadow: none;
+    transition: box-shadow 0.1s ease;
+    
+}
+.border{
+
+    margin-top: 50px;
+    margin-left: 15%;
+
+    width: 70%;
+    height: 50%;
+    border: 2px solid black ;
+    border-radius: 9px;
+}
+.www{
+    position: inherit;
+    width: 100%;
+    border-radius: 5px;
+       
+}
+.description{
+    margin-left: 15%;
+
+}
+.hed{
+    margin-left:15%;
+
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.price{
+    font-size: 15px;
+    margin-bottom:70px ;
+    margin-left: 90%;
+}
+
+

@@ -1,0 +1,17 @@
+<form class="form center">
+    <div class="form-group ">
+      <div class="cc">
+      <a #logn class="btn btn-default bttn aa" (click)="LogIN(logn,sigup)">LogIN </a>
+      <em class='space'>  | </em>
+      <a #sigup class="btn btn-default bttn" (click)="SignUp(sigup,logn)" >SingUP</a>
+    </div>
+  </div>
+  <br>
+  <div *ngIf="signup">
+    <app-sing-up></app-sing-up>
+  </div>
+  <div *ngIf="login">
+   <app-log-in></app-log-in>
+  </div>
+  </form>
+  

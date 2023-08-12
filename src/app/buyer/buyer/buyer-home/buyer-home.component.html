@@ -1,0 +1,26 @@
+<a href=""></a>
+<h1>Welcome {{name}}</h1>
+<div class="grid-container">
+<div *ngFor="let product of  allProducts"  class="ui itms ngNonBindableDemo border " >
+        <div (click)="clicked(product)"
+        [class.selected]="isSelected(product)" style="height: 100%;" id="title" name="title" class="www ">
+        <div class="price">price : {{product.Price}} $$</div>
+        <img [src]="product.Image" class="img">
+            <div class="header hed">{{product.Name}}</div>
+            <div class="meta">
+                <div class="app-product-sku sku">{{product.SellerName}}
+                    <div > product Number : {{product.Number}}</div>
+                    <div class="">quntaty:{{product.Quntaty}}</div>
+                    <a  *ngIf="isSelected(product)" (click)="cart(product)" class="btn btn-default bttn submet aa link"  #H > Add to shoping Cart </a>
+
+                </div>
+                <div class="">
+<br>
+                </div>
+            </div>
+             
+        </div>
+
+        </div>
+    </div>
+    <br><br>

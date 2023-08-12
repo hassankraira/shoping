@@ -1,0 +1,22 @@
+<a href=""></a>
+<h1>Welcome {{name}}</h1>
+<h2>All your Products :</h2>
+<div class="grid-container">
+<div *ngFor="let product of  products"  class="ui itms ngNonBindableDemo border" >
+    <div (click)="clicked(product)"
+    [class.selected]="isSelected(product)" style="height: 100%;" id="title" name="title" class="www ">
+    <div class="price">price : {{product.Price}} $$</div>
+    <img [src]="product.Image" class="img">
+        <div class="header hed">{{product.Name}}</div>
+        <div class="meta">
+            <div class="app-product-sku sku">{{product.SellerName}}</div>
+            <div class="">
+                <div > product Number : {{product.Number}}</div>
+                <div class="mm">quntaty:{{product.Quntaty}}</div>
+            </div>
+        </div>
+         
+    </div>
+    </div>
+</div>
+<br><br>

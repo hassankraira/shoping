@@ -1,0 +1,22 @@
+<div  class="page-header pp">
+    <div class="container">
+        <div class="navbar navbar-default ">
+            <h1 class="navbar-brand brand" href="#">Seller Dashboard :</h1>
+            <a class="link aa" #H  [routerLink]="['./Home']"(click)="toutch(H , [C,P,L,R])"> Home </a>
+            <a class="link" #C [routerLink]="['./AddProduct']"(click)="toutch(C,[H,P,L,R])"> Add Product </a>
+            <a class="link" #P [routerLink]="['./RemoveProduct']"(click)="toutch(P,[H,C,L,R])">Remove Product  </a>
+            <a class="link" #R [routerLink]="['./Requests']"(click)="toutch(R,[H,C,L,P])">Requests  </a>
+
+           <a class="link" href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>      
+       <a class="link" #L [routerLink]="['/loginsingup']" (click)="LogOUt()" (click)="toutch(L,[H,C,P,R])"> LogOut</a>
+        </div>
+    </div>
+
+</div>
+
+<div  id="content">
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+

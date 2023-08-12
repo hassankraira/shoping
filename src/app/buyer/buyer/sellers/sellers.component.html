@@ -1,0 +1,17 @@
+<a href=""></a>
+<div  *ngFor="let seller of  allSeller" class="ui itms ngNonBindableDemo border" >
+    <div (click)="clicked(seller)"
+    [class.selected]="isSelected(seller)" style="height: 100%;" id="title" name="title" class="www ">
+        <div class="header hed">{{seller.name}}</div>
+        <div class="meta">
+            <div style="margin-left:15%;" class="app-product-sku sku">{{seller.Email.replace('1','')}}</div>
+                <div class="description"> Phone Number : {{seller.phone}} </div>
+                <div class="description" *ngIf="selected(seller,seller.Email.replace('1',''))"> number of products : {{prodcutNumber}} </div>
+                <br>
+             <br>
+             <br>
+        </div>
+         
+    </div>
+    </div>
+<br><br>

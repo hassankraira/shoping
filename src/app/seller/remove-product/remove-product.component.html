@@ -1,0 +1,13 @@
+<form class="cc">
+<div class="form-group">
+    <div *ngIf="!falid&&message" class="alert alert-danger select" >
+        {{message}}
+      </div>
+      <div *ngIf="message&&ff" class="alert alert-primary select" >
+        {{message}}
+      </div>
+<label >Product Number</label>
+<input #Number class="form-control " >
+</div>
+<a class="btn btn-default bttn submet aa" (click)="Remove(Number.value)" >Remove Product </a>
+</form>

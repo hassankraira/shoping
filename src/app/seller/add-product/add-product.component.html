@@ -1,0 +1,25 @@
+<a href=""></a>
+<div  class="form-group cc">
+    <div *ngIf="!falid&&message" class="alert alert-danger select" >
+      {{message}}
+    </div>
+    <div *ngIf="message&&ff" class="alert alert-primary select" >
+      {{message}}
+    </div>
+      <label >Product Name</label>
+      <input #Name class="form-control " >
+      <label >Price:</label>
+      <input #Price type="" class="form-control " >
+    </div>
+    <div class="form-group cc">
+      <label >Quantaty:</label>
+      <input #Quantaty type=""  class="form-control " >
+    </div>
+    <div class="form-group cc">
+      <label >ImagrUrl:</label>
+      <input #Image class="form-control " >
+    </div>
+    <div class="form-group cc">
+    </div>
+    <a class="btn btn-default bttn submet aa" (click)="AddProduct(Name.value,Price.value,Quantaty.value,Image.value)" >Add Product </a>
+  

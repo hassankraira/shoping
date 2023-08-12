@@ -1,0 +1,21 @@
+<div  class="page-header pp">
+    <div class="container">
+        <div class="navbar navbar-default ">
+            <h1 class="navbar-brand brand" href="#">Buyer Dashboard:</h1>
+            <a class="link aa" #H  [routerLink]="['./Home']"(click)="toutch(H , [C,P,L])"> Home </a>
+            <a class="link" #C [routerLink]="['./Cart']"(click)="toutch(C,[H,P,L])"> Cart </a>
+            <a class="link" #P [routerLink]="['./sellers']"(click)="toutch(P,[H,C,L])">Sellers  </a>
+
+           <a class="link" href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a>      
+       <a class="link" #L [routerLink]="['/loginsingup']" (click)="LogOUt()" (click)="toutch(L,[H,C,P])"> LogOut</a>
+        </div>
+    </div>
+
+</div>
+
+<div  id="content">
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+

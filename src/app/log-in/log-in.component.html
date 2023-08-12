@@ -1,0 +1,12 @@
+<div class="form-group cc">
+    <label >Email:</label>
+    <input #email type="email" class="form-control " >
+  </div>
+  <div class="form-group cc">
+    <label >password:</label>
+    <input #password type="password" class="form-control " >
+  </div>
+
+  <a class="btn btn-default bttn submet aa" [routerLink]="[sellerUser]"   (click)="login(email.value,password.value)" >Log In </a>
+  <div  id="content">
+  

@@ -1,0 +1,36 @@
+<div class="grid-cont">
+<div>
+<div *ngFor="let product of  allpp"  class="ui itms ngNonBindableDemo border " >
+        <div (click)="clicked(product)"
+        [class.selected]="isSelected(product)" style="height: 100%;" id="title" name="title" class="www ">
+        <a  class="price btn" (click)="remove(product)">X</a>
+        <div #price class="price">price : {{product.Price}} $$</div>
+        <img [src]="product.Image" class="img">
+            <div class="header hed">{{product.Name}}</div>
+            <div class="meta">
+                <div class="app-product-sku sku">{{product.SellerName}}
+                    <div > product Number : {{product.Number}}</div>
+                    <div class="">quntaty:{{product.Quntaty}}</div>
+                </div>
+                <div class="">
+                   <div class="form-group input">
+                        <label >quntaty you need : </label>
+                        <input #qqq type="number" onkeydown="return false"  value="{{nn}}" class="form-control ii" min="1" max="{{product.Quntaty}}" >
+                       </div>
+                       <a  *ngIf="cost(qqq.value,product.Number,product.Price)"></a>
+                  <br><br>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <br><br>
+    </div>
+    <div class="ui itms ngNonBindableDemo bord ">
+        <h1 class="header">Subtotal</h1>
+        <h3 *ngIf="updateTotalSumAsync()"><a href=""></a>{{ totalSum }}$$<a></a></h3>
+        <div>items( {{costs.length}} )</div>
+        <a   (click)="requsert(prodcut)" class="btn btn-default bttn submet aa link"  #H > requsert from seller </a>
+    </div>
+    </div>
+    
